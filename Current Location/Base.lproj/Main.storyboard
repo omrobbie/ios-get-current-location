@@ -38,14 +38,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="OOs-Oe-Yw1">
+                                <rect key="frame" x="182" y="471.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i37-6I-byW"/>
+                                    <constraint firstAttribute="width" constant="50" id="prZ-De-Hgm"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="OOs-Oe-Yw1" firstAttribute="top" secondItem="f4m-AS-VQV" secondAttribute="bottom" constant="20" id="0Nj-rm-6pz"/>
                             <constraint firstItem="GcZ-dV-bIn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0oE-B9-gxG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f4m-AS-VQV" secondAttribute="trailing" constant="20" id="6V6-73-8zQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jMJ-aV-p2f" secondAttribute="trailing" id="BDi-bF-1rg"/>
                             <constraint firstItem="f4m-AS-VQV" firstAttribute="top" secondItem="GcZ-dV-bIn" secondAttribute="bottom" constant="20" id="ETr-0s-XjC"/>
                             <constraint firstItem="jMJ-aV-p2f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HsH-Wg-eUM"/>
+                            <constraint firstItem="OOs-Oe-Yw1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sg9-BN-luX"/>
                             <constraint firstItem="GcZ-dV-bIn" firstAttribute="top" secondItem="jMJ-aV-p2f" secondAttribute="bottom" constant="64" id="Uqq-1h-xp8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GcZ-dV-bIn" secondAttribute="trailing" id="aUl-95-YgR"/>
                             <constraint firstItem="f4m-AS-VQV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vPf-5s-MaG"/>
@@ -54,12 +63,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="OOs-Oe-Yw1" id="D49-7Q-4Lx"/>
                         <outlet property="lblResult" destination="f4m-AS-VQV" id="QMk-DG-DjM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="42"/>
+            <point key="canvasLocation" x="68.115942028985515" y="42.1875"/>
         </scene>
     </scenes>
     <resources>
